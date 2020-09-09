@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="119dp"
+        android:layout_height="119dp"
+        android:layout_marginTop="55dp"
+        android:background="@drawable/user_login" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/RobotoStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26dp"
+            android:text="@string/welcome_text"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            style="@style/RobotoLightStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="@string/start_text"
+            android:textSize="16sp" />
+
+        <TextView
+            style="@style/RobotoLightStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/profile_text"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center_vertical|center_horizontal">
+
+
+        <com.google.android.gms.common.internal.SignInButtonImpl
+            android:id="@+id/sign_in_google"
+            android:layout_width="146dp"
+            android:layout_height="40dp"
+            android:background="@drawable/google_roundedbutton"
+            android:drawableLeft="@drawable/google_icon"
+            android:fontFamily="@font/roboto"
+            android:paddingLeft="16dp"
+            android:text="@string/google_text"
+            android:textAllCaps="false"
+            android:textColor="#000"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+</LinearLayout>
